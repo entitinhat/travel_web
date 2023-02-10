@@ -62,7 +62,8 @@
     border-right: 1px solid rgb(207, 237, 210);
 }
 
-.navbar-tools {
+.navbar-tools,
+.row {
     display: flex;
     align-items: center;
 }
@@ -103,10 +104,10 @@
 }
 
 .banner-right {
-    background-image: url(benjamin.jpg);
+    background-image: url(./images/travel.jpg);
     background-position: 30% 50%;
 
-    opacity: 70%;
+    /* opacity: 70%; */
     padding: 20px;
 
 }
@@ -372,7 +373,7 @@
 
 .tour-book-btn:hover {
     color: white;
-    background-color: #e2d2d2;
+    background-color: #e63838;
 }
 
 .slick-slider {
@@ -676,8 +677,8 @@
     display: flex;
     /* border: 2px red solid; */
     /* background-color:rgba(57, 131, 177, 0.807); */
-    background-image: url(lake.jpg);
-    background-position: 30% 70%;
+    background-image: url(./images/lakeVietnam.jpg);
+    background-position: 0%;
 }
 
 .book-title {
@@ -782,7 +783,6 @@
     font-weight: lighter;
     display: flex;
     border-left: 1px rgb(180, 179, 179) groove;
-    ;
 }
 
 .subscribe-arrow {
@@ -865,7 +865,11 @@
     background-color: white;
 }
 
-@media only screen and (max-width: 46.1875em) {
+.email-submit-responsive {
+    display: none;
+}
+
+@media only screen and (max-width: 740px) {
     .navbar-list {
         display: none;
     }
@@ -913,5 +917,67 @@
 
     .weather-forecast {
         display: none;
+    }
+
+    .tours-list {
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: 380px;
+        grid-area: 2 / 2 / 4 / 5;
+    }
+
+    .popular-tours-package {
+        display: block;
+    }
+
+    .description {
+        display: block;
+        margin: 10px 10px;
+        text-align: justify;
+    }
+
+    .tours-display {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Footer */
+    .info {
+        display: block;
+        padding: 0;
+        background-position: 70%;
+        background-size: cover;
+    }
+
+    .email-input {
+
+        width: 100%;
+    }
+
+    .email-input-box {
+        width: 80%;
+    }
+
+    .email-submit {
+        padding: 0;
+    }
+
+    .social-icon {
+        margin: 0 10px;
+    }
+
+    .main-footer {
+        display: block;
+        padding: 0;
+    }
+
+    .footer-logo {
+        padding: 5px;
+        border-radius: 50%;
+        width: 50%;
+        margin: auto;
+    }
+
+    .first-col-contact {
+        background-color: green;
     }
 }
