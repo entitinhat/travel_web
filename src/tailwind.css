@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .tour-book-btn {
+        @apply mt-3 border-2 border-solid border-red-700 p-2.5 text-sm text-red-600 font-bold bg-transparent rounded-md cursor-pointer;
+    }
+}

@@ -190,8 +190,6 @@
 .view-advance-btn:hover {
     background-color: #ff1a1a;
     color: white;
-
-
 }
 
 .dropdown-online-booking {
@@ -404,9 +402,9 @@
     background-color: #e63838;
 }
 
-.slick-slider {
+/* .slick-slider {
     background-color: rgb(229, 221, 221);
-}
+} */
 
 .slick-img-wrapper {
     position: relative;
@@ -880,6 +878,7 @@
     padding-left: 5px;
     background-color: black;
     color: white;
+    /* border: 2px white solid; */
 }
 
 .select-lan-cur:hover {
