@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
   <title>Travel Web</title>
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -21,11 +22,12 @@
 
   <div class="bg-[#6bbddb] flex justify-between items-center">
     <div class="mx-7 pt-1 items-center">
-      <img class="w-20 h-8" src="/logo-vector.svg">
+      <img class="w-24 h-10" src="/logo-vector.svg">
     </div>
 
-    <div class="flex justify-center items-center list-none text-[#362e2ec7]
-    font-bold uppercase">
+    <div class="hidden md:flex justify-center items-center list-none text-[#362e2ec7]
+    font-bold uppercase 
+    ">
       <li class="text-white p-4 border-l-2 border-[rgb(207, 237, 210)] border-solid
       list-inside border-t-2 border-yellow-300">
         Trang Chủ <span style="margin: 4px;"><iconify-icon icon="bxs:down-arrow" style="color: #cfcfcf; opacity: 70%;"
@@ -61,15 +63,17 @@
 
   </div>
 
-  <div class="flex relative">
-    <div class="bg-[url('/images/travel.jpg')] bg-center p-5 flex-1">
-      <h1 class="m-12 text-red-600 text-4xl font-mono flex justify-center">Khám phá Việt Nam</h1>
-      <p class="mb-4 px-12 py-10 text-center text-white text-xl "> Đi đến mọi tỉnh thành, khám phá mọi ngõ ngách Việt
-        Nam bằng cách sử dụng dịch vụ của Tour du lịch
-        Travel Web
-        Entiti</p>
-      <div class="view-advance-btn ml-10 border-2 border-solid border-red-700 w-32 p-2.5 text-sm text-red-600 font-bold
-      bg-transparent rounded-sm cursor-pointer relative">
+  <!-- Banner section -->
+
+  <div class="flex flex-col-reverse md:flex md:flex-row md:relative">
+    <div class="bg-[url('/images/travel.jpg')] md:bg-[url('/images/travel.jpg')] bg-center p-5 flex-1">
+      <h1 class="text-red-600 font-bold text-4xl font-mono flex justify-center md:m-10">Khám phá Việt Nam</h1>
+      <p class="px-0 mb-4 py-10 font-mono font-medium italic text-center text-yellow-50 text-lg md:px-10 md:text-xl">
+        Đi đến mọi tỉnh thành, khám phá mọi ngõ ngách Việt Nam bằng cách sử dụng dịch vụ Tour du lịch
+        Travel Web Entiti</p>
+
+      <div class="view-advance-btn ml-0 border-2 border-solid border-red-700 w-32 p-2.5 text-sm text-red-600 font-bold
+      bg-transparent rounded-sm cursor-pointer relative md:ml-10">
         <a> View Advance </a>
         <div class="dropdown-online-booking">
           <div class="place drop-down-item">
@@ -105,43 +109,32 @@
       <div class="banner-slide-image"><img src="/images/ruong_bac_thang.jpg" alt="" width="100%" height="100%"></div>
       <div class="banner-slide-image"><img src="/images/tauluahanoi.jpg" alt="" width="100%" height="100%"></div>
     </div>
-    <!-- <div class="banner-left banner-items w-2/4 -z-10 relative flex-1 slick-initialized slick-slider">
-      <div class="banner-slide-image"><img src="/images/vinh_ha_long.jpg" alt=""></div>
-      <div class="banner-slide-image"><img src="/images/ninhbinh.jpg" alt=""></div>
-      <div class="banner-slide-image"><img src="/images/ruong_bac_thang.jpg" alt=""></div>
-      <div class="banner-slide-image"><img src="/images/tauluahanoi.jpg" alt=""></div>
-    </div> -->
 
-
-
-    <!-- <div class="absolute flex flex-col items-center left-2/4 top-2/4 -translate-x-1/2 -translate-y-1/2">
-      <div class="banner-mini-img mini-1"><img src="/images/trian.jpg" alt=""></div>
-      <div class="banner-mini-img mini-2"><img src="/images/ruong_bac_thang.jpg" alt=""></div>
-      <div class="banner-mini-img mini-3"><img src="/images/hue.jpg" alt=""></div>
-      <div class="banner-mini-img mini-4"><img src="/images/dalat.jpg" alt=""></div>
-    </div> -->
-
+    <!-- Tours -->
   </div>
-  <section class="grid grid-cols-4 gap-x-1 gap-y-1 mt-1 mx-5 mb-2.5">
-    <div class="col-start-2 col-end-5 row-start-1 row-end-2 my-10 mx-12">
-      <section class="flex">
+  <section class="grid grid-cols-1 gap-x-1 gap-y-1 mt-1 mx-5 mb-2.5 md:grid-cols-4">
+    <div class="col-start-2 col-end-5 row-start-1 row-end-2">
+      <section class="block m-2.5 md:flex">
         <div class="flex-1">
-          <h1 class="font-bold text-2xl mb-3"> Gói du lịch phổ biến </h1>
-          <p> Sed ut perspiciatis unde omnis iste natus e omnie omnis iste s iste error sit voluptatem accusantium
+          <h1 class="font-bold text-2xl mb-3 md:py-6"> Gói du lịch phổ biến </h1>
+          <p class="md:mb-8"> Sed ut perspiciatis unde omnis iste natus e omnie omnis iste s iste error sit voluptatem
+            accusantium
             doloremque laudantium, totam rem aperiam, eaque ipsa qua</p>
         </div>
         <div class="flex-1">
-          <button class="ml-10 border-2 border-solid border-red-700 p-2.5 text-sm text-white font-bold
+          <button class="md:ml-10 mt-4 border-2 border-solid border-red-700 p-2.5 text-sm text-white font-bold
           bg-red-500 rounded-xl cursor-pointer" type="button" class="">Xem Tất Cả</button>
         </div>
       </section>
     </div>
-    <div class="m-0 col-start-1 row-start-2 row-end-4">
+    <!-- Weather Forecast -->
+    <div class="hidden md:block m-0 col-start-1 row-start-2 row-end-4">
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-fd39d9da-4b10-47ef-808f-7f67f52195b1"></div>
     </div>
+    <!--  -->
     <div class="tours-list">
-      <div class="w-72 relative">
+      <div class="w-full relative md:w-72">
         <div class="img-wrapper">
           <img class="tour-img rounded-3xl h-48 w-full" src="/images/danang.jpg" alt="">
           <div class="discount fade">
@@ -149,18 +142,20 @@
           </div>
         </div>
         <div class="absolute left-40 top-40 text-white bg-red-600 p-1.5 rounded-md">2 Days 1 Night</div>
-        <p>Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong lành tại nơi
+        <p class="m-2">Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong
+          lành tại nơi
           đây mà thiên nhiên đã ưu ái ban tặng</p>
         <div class="flex justify-between items-center">
           <button
             class="tour-book-btn mt-3 border-2 border-solid border-red-700 p-2.5 text-sm text-red-600 font-bold bg-transparent rounded-md cursor-pointer;">
             Đặt ngay </button>
-          <h3>From 39$</h3>
+          <h3 class="font-bold">From 39$</h3>
         </div>
       </div>
-      <div class="w-72 relative">
+      <div class="w-full relative md:w-72">
         <img class="tour-img rounded-3xl h-48 w-full" src="/images/phanthiet.jpg" alt="">
-        <p>Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong lành tại nơi
+        <p class="m-2">Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong
+          lành tại nơi
           đây mà thiên nhiên đã ưu ái ban tặng</p>
 
         <button
@@ -168,33 +163,37 @@
           Đặt ngay </button>
 
       </div>
-      <div class="w-72 relative">
+      <div class="w-full relative md:w-72">
         <img class="tour-img rounded-3xl h-48 w-full" src="/images/dalat.jpg" alt="">
-        <p>Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong lành tại nơi
+        <p class="m-2">Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong
+          lành tại nơi
           đây mà thiên nhiên đã ưu ái ban tặng</p>
         <button
           class="tour-book-btn mt-3 border-2 border-solid border-red-700 p-2.5 text-sm text-red-600 font-bold bg-transparent rounded-md cursor-pointer;">
           Đặt ngay </button>
       </div>
-      <div class="w-72 relative">
+      <div class="w-full relative md:w-72">
         <img class="tour-img rounded-3xl h-48 w-full" src="/images/vungtau.jpg" alt="">
-        <p>Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong lành tại nơi
+        <p class="m-2">Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong
+          lành tại nơi
           đây mà thiên nhiên đã ưu ái ban tặng</p>
         <button
           class="tour-book-btn mt-3 border-2 border-solid border-red-700 p-2.5 text-sm text-red-600 font-bold bg-transparent rounded-md cursor-pointer;">
           Đặt ngay </button>
       </div>
-      <div class="w-72 relative">
+      <div class="w-full relative md:w-72">
         <img class="tour-img rounded-3xl h-48 w-full" src="/images/phuquoc.jpg" alt="">
-        <p>Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong lành tại nơi
+        <p class="m-2">Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong
+          lành tại nơi
           đây mà thiên nhiên đã ưu ái ban tặng</p>
         <button
           class="tour-book-btn mt-3 border-2 border-solid border-red-700 p-2.5 text-sm text-red-600 font-bold bg-transparent rounded-md cursor-pointer;">
           Đặt ngay </button>
       </div>
-      <div class="w-72 relative">
+      <div class="w-full relative md:w-72">
         <img class="tour-img rounded-3xl h-48 w-full" src="/images/hoian.jpg" alt="">
-        <p>Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong lành tại nơi
+        <p class="m-2">Đà Nẵng là một thành phố đáng sống nhất so với các tỉnh thành ở Việt Nam với không gian trong
+          lành tại nơi
           đây mà thiên nhiên đã ưu ái ban tặng</p>
         <button
           class="tour-book-btn mt-3 border-2 border-solid border-red-700 p-2.5 text-sm text-red-600 font-bold bg-transparent rounded-md cursor-pointer;">
@@ -365,8 +364,9 @@
           <img class="slick-img" src="/images/kito.jpg" alt="">
           <div class="slick-title"> Tượng Chúa Kito - Vũng Tàu</div>
         </div>
-        <p class="slick-description">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
-          Tôi đã có khoảng thời gian vui </p>
+        <p class="slick-description p-4">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
+          Tôi đã có khoảng thời gian vui vẻ ở đây
+        </p>
         <div class="slick-feedback">
           <div class="slick-feedback-icon icon-1"><iconify-icon icon="carbon:view-filled" width="24" height="24"
               style="margin: 5px;"></iconify-icon>
@@ -383,8 +383,9 @@
           <img class="slick-img" src="/images/nhathoducba.jpg" alt="">
           <div class="slick-title"> Nhà Thờ Đức Bà - Hồ Chí Minh</div>
         </div>
-        <p class="slick-description">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
-          Tôi đã có khoảng thời gian vui </p>
+        <p class="slick-description p-4">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
+          Tôi đã có khoảng thời gian vui vẻ ở đây
+        </p>
         <div class="slick-feedback">
           <div class="slick-feedback-icon icon-1"><iconify-icon icon="carbon:view-filled" width="24" height="24"
               style="margin: 5px;"></iconify-icon>
@@ -401,8 +402,9 @@
           <img class="slick-img" src="/images/cairang.jpg" alt="">
           <div class="slick-title"> Chợ nổi Cái Răng - Cần Thơ</div>
         </div>
-        <p class="slick-description">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
-          Tôi đã có khoảng thời gian vui </p>
+        <p class="slick-description p-4">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
+          Tôi đã có khoảng thời gian vui vẻ ở đây
+        </p>
         <div class="slick-feedback">
           <div class="slick-feedback-icon icon-1"><iconify-icon icon="carbon:view-filled" width="24" height="24"
               style="margin: 5px;"></iconify-icon>
@@ -419,8 +421,9 @@
           <img class="slick-img" src="/images/hue.jpg" alt="">
           <div class="slick-title"> Kinh Thành Huế - Huế</div>
         </div>
-        <p class="slick-description">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
-          Tôi đã có khoảng thời gian vui </p>
+        <p class="slick-description p-4">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
+          Tôi đã có khoảng thời gian vui vẻ ở đây
+        </p>
         <div class="slick-feedback">
           <div class="slick-feedback-icon icon-1"><iconify-icon icon="carbon:view-filled" width="24" height="24"
               style="margin: 5px;"></iconify-icon>
@@ -437,8 +440,9 @@
           <img class="slick-img" src="/images/nhatrang.jpg" alt="">
           <div class="slick-title"> Vinpearl Land - Nha Trang</div>
         </div>
-        <p class="slick-description">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
-          Tôi đã có khoảng thời gian vui </p>
+        <p class="slick-description p-4">Một trải nghiệm tuyệt vời, mọi thứ hoàn toàn đúng kế hoạch.
+          Tôi đã có khoảng thời gian vui vẻ ở đây
+        </p>
         <div class="slick-feedback">
           <div class="slick-feedback-icon icon-1"><iconify-icon icon="carbon:view-filled" width="24" height="24"
               style="margin: 5px;"></iconify-icon>
@@ -456,7 +460,7 @@
 
 
   <section class="footer">
-    <div class="px-32 flex bg-[url('/images/footer.jpg')] bg-top bg-no-repeat bg-auto">
+    <div class="md:flex-row md:px-32 flex flex-col bg-[url('/images/footer.jpg')] bg-top bg-no-repeat bg-auto">
       <div class="info-item ">
         <div>
           <p class="book-title text-3xl font-medium mb-5">Book our trips to enjoy the best moments </p>
@@ -501,11 +505,15 @@
           <div class="flex items-center">
             <label for=""> <iconify-icon icon="ant-design:mail-twotone" width="50" height="50"
                 style="margin: 0;"></iconify-icon> </label>
-            <input class="text-lg italic ml-4 outline-none" type="text" class="email-input-box"
-              placeholder="Your email">
+            <input class="italic ml-4 outline-none" type="text" class="email-input-box" placeholder="Your email">
           </div>
-          <button type='submit' class="email-submit"> SUBSCRIBE <iconify-icon icon="akar-icons:arrow-right"
-              class="subscribe-arrow" style="color: #3bd04f;"></iconify-icon></button>
+          <div class="flex">
+            <button type='submit' class="email-submit pl-2"> SUBSCRIBE
+              <iconify-icon icon="akar-icons:arrow-right" class="subscribe-arrow"
+                style="color: #3bd04f;"></iconify-icon>
+            </button>
+
+          </div>
         </div>
         <button type='submit' class="email-submit-responsive"> SUBSCRIBE <iconify-icon icon="akar-icons:arrow-right"
             class="subscribe-arrow" style="color: #3bd04f;"></iconify-icon></button>
@@ -525,11 +533,11 @@
       </div>
     </div>
     <div class="main-footer">
-      <div class="footer-logo m-5">
+      <div class="footer-logo md:m-5">
         <img src="/logo-vector.svg" class="w-24 h-24">
       </div>
-      <div class="flex items-center">
-        <div class="col-contact-item m-5 text-lg">
+      <div class="flex items-center justify-around">
+        <div class="col-contact-item md:m-5 text-lg">
           <ul>
             <li>About</li>
             <li>Blog</li>
@@ -541,7 +549,7 @@
           <ul>
             <li>Contact Us</li>
             <li>Privacy Policy</li>
-            <li>Terms of Service</li>
+            <li>Service</li>
             <li>Security</li>
           </ul>
         </div>
@@ -559,7 +567,7 @@
             <option value="">JPY</option>
           </select>
         </div>
-        <p class="text-lg"> 2009-2022 Sky Travel All rights reserved</p>
+        <p class="text-lg text-center"> 2009-2022 Sky Travel All rights reserved</p>
       </div>
     </div>
 

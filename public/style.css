@@ -6,6 +6,9 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+.box-sha {
+  box-shadow: 0px 8px 30px rgb(0 0 0 / 7%);
+}
 
 .dropdown-online-booking {
   border-radius: 5px;
@@ -656,7 +659,188 @@
 
 /* end of css cũ */
 
+/* responsive */
 
+@media only screen and (max-width: 740px) {
+  .navbar-list {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner-left {
+    width: 100%;
+  }
+
+  .banner-slide-image img {
+    height: 200px;
+  }
+
+  .banner-right {
+    min-height: 200px;
+  }
+
+  .banner-right h1 {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+
+  .banner-right p {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+
+  .view-advance-btn {
+    margin: 10px;
+    width: 100px;
+  }
+
+  .banner-mini-img-list {
+    flex-direction: row;
+    display: none;
+  }
+
+  .magazine-main-layout {
+    display: block;
+  }
+
+  .weather-forecast {
+    display: none;
+  }
+
+  .tours-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: 380px;
+    grid-area: 2 / 2 / 4 / 5;
+  }
+
+  .popular-tours-package {
+    display: block;
+  }
+
+  .description {
+    display: block;
+    margin: 10px 10px;
+    text-align: justify;
+  }
+
+  .tours {
+    width: 100%;
+  }
+
+  .tour-img {
+    width: 100%;
+  }
+
+  .tours-display {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .magazine-description {
+    padding: 0;
+    text-align: justify;
+  }
+
+
+  /* Footer */
+  .info {
+    display: block;
+    padding: 0;
+    background-position: 70%;
+    background-size: cover;
+  }
+
+  .email-input {
+
+    width: 100%;
+  }
+
+  .email-input-box {
+    width: 80%;
+  }
+
+  .email-submit {
+    padding: 0;
+  }
+
+  .social-icon {
+    margin: 0 10px;
+  }
+
+  .main-footer {
+    display: block;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .footer-logo {
+    padding: 2px;
+    border-radius: 50%;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .footer-language {
+    margin: 0 20px;
+  }
+
+  .footer-reserved {
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+  }
+
+  /* Dropdown booking */
+  .drop-down-item {
+
+    width: 71px;
+    padding: 5px;
+    border-right: 2px rgb(187, 213, 214) solid;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .drop-down-item:first-child {
+    font-size: 9px;
+  }
+
+  .drop-down-item:last-child {
+    border-right: none;
+  }
+
+  .drop-down-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+  .book-now {
+    margin: auto;
+  }
+
+  .book-now button {
+    padding: 3px;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    color: white;
+
+  }
+
+
+}
+
+/* end of responsive */
 
 *,
 ::before,

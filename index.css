@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .navbar {
     background-color: #6bbddb;
     display: flex;
@@ -306,6 +310,10 @@
     grid-row-end: 4;
 }
 
+.tour-div {
+    box-shadow: 0px 8px 30px rgb(0 0 0 / 7%);
+}
+
 .tours-display {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -436,7 +444,7 @@
 }
 
 .slick-description {
-    padding: 10px;
+
     text-align: center;
 }
 
@@ -787,8 +795,6 @@
 
 .email-input {
     border: 1px rgba(151, 143, 143, 0.2) groove;
-    /* width: 460px; */
-
 }
 
 .email-input-box {
@@ -990,10 +996,7 @@
         background-size: cover;
     }
 
-    .email-input {
 
-        width: 100%;
-    }
 
     .email-input-box {
         width: 80%;
